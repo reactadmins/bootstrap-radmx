@@ -24,10 +24,6 @@ const routes = [
         component: Dashboard,
     },
     {
-        path: ".",
-        component: Dashboard,
-    },
-    {
         path: "/dashboard",
         component: Dashboard,
     },
@@ -68,35 +64,35 @@ const routes = [
         component: Typography,
     },
     {
-        path: "/components/tables",
+        path: "/tables",
         component: Tables,
     },
     {
-        path: "/components/forms",
+        path: "/forms",
         component: Forms,
     },
     {
-        path: "/components/widgets",
+        path: "/widgets",
         component: Widgets,
     },
     {
-        path: "/components/charts",
+        path: "/charts",
         component: Charts,
     },
     {
-        path: "/components/maps",
+        path: "/maps",
         component: Maps,
     },
     {
-        route: "/auth/login",
+        route: "/login",
         component: Login,
     },
     {
-        route: "/auth/register",
+        route: "/register",
         component: Register,
     },
     {
-        route: "/auth/page404",
+        route: "/page404",
         component: Page404,
     },
     {

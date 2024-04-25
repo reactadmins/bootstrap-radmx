@@ -122,13 +122,13 @@
 }
 
 body[data-theme="dark"] {
-    .vertical_nav {
+    .navbar_wrapper {
         border-bottom: 1px solid var(--border-color);
         .navbar_nav {
             .header_left {
                 li {
                     button {
-                        color: var(--hedging-text-color);
+                        color: var(--hedging-text-color) !important;
                     }
                     .sidebar_menu_icon {
                         &::before {
@@ -141,8 +141,20 @@ body[data-theme="dark"] {
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .navbar_wrapper {
+        .navbar_nav {
+            .header_left {
+                .sidebar_mini {
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 425px) {
-    .vertical_nav {
+    .navbar_wrapper {
         padding: 16px;
     }
 }
